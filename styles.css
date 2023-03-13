@@ -91,6 +91,178 @@ p {
 
 /* This is the summary section (the right side of the main-container */
 .summary-content {
+  box-sizing: border-box;
+  width: 45%;
+  text-align: left;
+  /* border: 5px solid gold; */
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 40px;
+  color: rgb(0, 0, 0);
+}
+
+.summary-content h2 {
+  padding-bottom: 20px;
+}
+
+.summary-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list-scores {
+  list-style: none;
+  text-align: left;
+  width: inherit;
+  padding: 15px;
+  border-radius: 0.5em;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.075);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.075);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.075);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.075);
+  color: hsl(234, 85%, 45%);
+}
+
+.summary-score {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  padding-right: 3px;
+}
+
+.summary-max-score {
+  color: hsla(224, 30%, 27%, 0.422);
+  font-weight: 700;
+}
+
+.summary-content li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-text-container span {
+  line-height: 30px;
+  padding-left: 3px;
+}
+
+.score-icon {
+  position: relative;
+  top: 4px;
+}
+
+/* button */
+.continue {
+  width: inherit;
+  padding: 15px;
+  margin-top: 20px;
+  padding-right: 30px;
+  border-radius: 2em;
+  border-style: none;
+  font-weight: 520;
+  font-size: 0.9em;
+  color: hsl(221, 100%, 96%);
+  background-color: hsl(224, 30%, 27%);
+}
+
+.continue:hover {
+  cursor: pointer;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* responsive */
+
+@media (max-width: 800px) {
+  .main-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .results-container {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    font-size: small;
+  }
+
+  .summary-content {
+    width: 100%;
+  }
+
+  .summary-content h2 {
+    margin-top: -10px;
+  }
+
+  body {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .continue {
+    margin-bottom: 30px;
+  }
+}
+
+
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+/* Gives padding to all the content inside the results-container */
+.results-content {
+  padding: 50px;
+}
+
+
+.of-100 {
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  color: hsla(222, 100%, 96%, 0.283);
+}
+
+.your-result {
+  color: hsla(222, 100%, 96%, 0.822);
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+
+.great {
+  color: hsl(0, 0%, 100%);
+  font-weight: 550;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.score-info {
+  color: hsla(222, 100%, 96%, 0.667);
+  padding-bottom: 10px;
+}
+
+
+/* This is the summary section (the right side of the main-container */
+.summary-content {
   width: 45%;
   text-align: left;
   /* border: 5px solid gold; */
